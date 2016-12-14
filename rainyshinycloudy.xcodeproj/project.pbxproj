@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74342BA51E013D4B00C1A55E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74342BA41E013D4B00C1A55E /* Constants.swift */; };
+		74342BA91E0148FA00C1A55E /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74342BA81E0148FA00C1A55E /* CurrentWeather.swift */; };
 		748913C21E0028FF0094C03F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748913C11E0028FF0094C03F /* AppDelegate.swift */; };
-		748913C41E0028FF0094C03F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748913C31E0028FF0094C03F /* ViewController.swift */; };
+		748913C41E0028FF0094C03F /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748913C31E0028FF0094C03F /* WeatherVC.swift */; };
 		748913C71E0028FF0094C03F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748913C51E0028FF0094C03F /* Main.storyboard */; };
 		748913C91E0028FF0094C03F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 748913C81E0028FF0094C03F /* Assets.xcassets */; };
 		748913CC1E0028FF0094C03F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748913CA1E0028FF0094C03F /* LaunchScreen.storyboard */; };
@@ -36,9 +38,11 @@
 
 /* Begin PBXFileReference section */
 		41E355C5E21BC7EA2C32266B /* Pods-rainyshinycloudy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rainyshinycloudy.release.xcconfig"; path = "Pods/Target Support Files/Pods-rainyshinycloudy/Pods-rainyshinycloudy.release.xcconfig"; sourceTree = "<group>"; };
+		74342BA41E013D4B00C1A55E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		74342BA81E0148FA00C1A55E /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		748913BE1E0028FF0094C03F /* rainyshinycloudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rainyshinycloudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		748913C11E0028FF0094C03F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		748913C31E0028FF0094C03F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		748913C31E0028FF0094C03F /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
 		748913C61E0028FF0094C03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		748913C81E0028FF0094C03F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		748913CB1E0028FF0094C03F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -122,11 +126,13 @@
 			isa = PBXGroup;
 			children = (
 				748913C11E0028FF0094C03F /* AppDelegate.swift */,
-				748913C31E0028FF0094C03F /* ViewController.swift */,
+				748913C31E0028FF0094C03F /* WeatherVC.swift */,
 				748913C51E0028FF0094C03F /* Main.storyboard */,
 				748913C81E0028FF0094C03F /* Assets.xcassets */,
 				748913CA1E0028FF0094C03F /* LaunchScreen.storyboard */,
 				748913CD1E0028FF0094C03F /* Info.plist */,
+				74342BA41E013D4B00C1A55E /* Constants.swift */,
+				74342BA81E0148FA00C1A55E /* CurrentWeather.swift */,
 			);
 			path = rainyshinycloudy;
 			sourceTree = "<group>";
@@ -334,8 +340,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				748913C41E0028FF0094C03F /* ViewController.swift in Sources */,
+				748913C41E0028FF0094C03F /* WeatherVC.swift in Sources */,
 				748913C21E0028FF0094C03F /* AppDelegate.swift in Sources */,
+				74342BA91E0148FA00C1A55E /* CurrentWeather.swift in Sources */,
+				74342BA51E013D4B00C1A55E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
