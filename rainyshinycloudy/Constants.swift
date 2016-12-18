@@ -8,17 +8,14 @@
 
 import Foundation
 
+// Nghe An's Coordinate
 let TEST_LATITUDE = "19.275"
 let TEST_LONGTITUDE = "104.278"
+// Da Nang's Coordinate: 16.0858449 - 108.1436891
+
 let MY_API_KEY = "2396b5abd83df3293ddf236920b7055f"
 
-let BASE_URL = "http://api.openweathermap.org/data/2.5/weather?"
-let LATITUDE = "lat="
-let LONGTITUDE = "&lon="
-let APP_ID = "&appid="
-
-let CURRENT_WEATHER_URL = "\(BASE_URL)\(LATITUDE)\(TEST_LATITUDE)\(LONGTITUDE)\(TEST_LONGTITUDE)\(APP_ID)\(MY_API_KEY)"
-
-let FORECAST_URL = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=19.275&lon=104.278&cnt=10&appid=2396b5abd83df3293ddf236920b7055f"
+let CURRENT_WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather?lat=\(Location.sharedInstance.latitude!)&lon=\(Location.sharedInstance.longitude!)&appid=\(MY_API_KEY)"
+let FORECAST_URL = "http://api.openweathermap.org/data/2.5/forecast/daily?lat=\(Location.sharedInstance.latitude!)&lon=\(Location.sharedInstance.longitude!)&cnt=10&appid=\(MY_API_KEY)"
 
 typealias DownloadComplete = () -> ()

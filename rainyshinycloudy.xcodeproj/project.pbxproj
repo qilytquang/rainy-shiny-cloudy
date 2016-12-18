@@ -10,6 +10,7 @@
 		74342BA51E013D4B00C1A55E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74342BA41E013D4B00C1A55E /* Constants.swift */; };
 		74342BA91E0148FA00C1A55E /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74342BA81E0148FA00C1A55E /* CurrentWeather.swift */; };
 		74342BAB1E01678C00C1A55E /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74342BAA1E01678C00C1A55E /* Forecast.swift */; };
+		7475ACE51E066A270057C027 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7475ACE41E066A270057C027 /* Location.swift */; };
 		748913C21E0028FF0094C03F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748913C11E0028FF0094C03F /* AppDelegate.swift */; };
 		748913C41E0028FF0094C03F /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748913C31E0028FF0094C03F /* WeatherVC.swift */; };
 		748913C71E0028FF0094C03F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 748913C51E0028FF0094C03F /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		74342BA41E013D4B00C1A55E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		74342BA81E0148FA00C1A55E /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		74342BAA1E01678C00C1A55E /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		7475ACE41E066A270057C027 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		748913BE1E0028FF0094C03F /* rainyshinycloudy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rainyshinycloudy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		748913C11E0028FF0094C03F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		748913C31E0028FF0094C03F /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				74342BA81E0148FA00C1A55E /* CurrentWeather.swift */,
 				74342BAA1E01678C00C1A55E /* Forecast.swift */,
 				74A1AB231E020DB3002613BD /* WeatherCell.swift */,
+				7475ACE41E066A270057C027 /* Location.swift */,
 			);
 			path = rainyshinycloudy;
 			sourceTree = "<group>";
@@ -227,7 +230,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "quang nguyen";
 				TargetAttributes = {
 					748913BD1E0028FE0094C03F = {
@@ -352,6 +355,7 @@
 				74342BA91E0148FA00C1A55E /* CurrentWeather.swift in Sources */,
 				74342BA51E013D4B00C1A55E /* Constants.swift in Sources */,
 				74342BAB1E01678C00C1A55E /* Forecast.swift in Sources */,
+				7475ACE51E066A270057C027 /* Location.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +428,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -474,6 +479,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -503,6 +509,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B47AE160B21644CD2B83D219 /* Pods-rainyshinycloudy.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = rainyshinycloudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -516,6 +523,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 41E355C5E21BC7EA2C32266B /* Pods-rainyshinycloudy.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = rainyshinycloudy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
